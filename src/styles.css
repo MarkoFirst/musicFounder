@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css);
+
+body {
+  font-family: Fira Code, serif;
+  background: url('http://www.polisristorante.com/wp-content/uploads/2016/11/polisbacgroundristorante.jpg') no-repeat fixed bottom;
+}
+ol {
+  width: 800px;
+}
+li {
+  padding: 6px;
+  font-weight: 600;
+  margin: 10px;
+  border: 1px solid grey;
+}
+textarea {
+  width: 300px;
+  height: 200px;
+}
+
+#textarea-block {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.already-in-telegram {
+  color: red;
+}
+.download {
+  margin-left: 20px;
+  color: green;
+}
+.buttons-block {
+  display: inline-block;
+  float: right;
+}
+.song-content {
+  display: inline-block;
+  width: 75%;
+}

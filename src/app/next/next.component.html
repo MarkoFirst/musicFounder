@@ -1,0 +1,11 @@
+<li *ngFor="let sound of canList(musicList$ | async)">
+  <div class="song-content">{{sound.artist.name}} - {{sound.title}}</div>
+  <div class="buttons-block">
+    <button class="already-in-telegram" (click)="haveInTelegram(sound)">Уже есть!</button>
+    <a href="http://zk.fm/mp3/search?keywords={{getSearchStr(sound.artist.name + ' ' + sound.title)}}" target="_blank">
+      <button class="download">Скачать</button>
+    </a>
+  </div>
+</li>
+<app-next *ngIf="nextList" [next]="nextList" [myList]="myList"></app-next>
+
